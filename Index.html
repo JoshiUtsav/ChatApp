@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="chat_section">
+      <div class="brand">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="Icon"
+          srcset=""
+          width="50px"
+          height="50px"
+        />
+        <h1>WhatsApp</h1>
+      </div>
+      <div class="message_area">
+      <div>
+        <textarea
+          id="textarea"
+          rows="1"
+          cols="30"
+          placeholder="write a message"
+        ></textarea>
+        <Button><img  id="sendBtn" src="/send.ico" alt="" srcset=""></Button>
+      </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
